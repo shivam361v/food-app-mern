@@ -10,6 +10,15 @@ mongoDB();
 //     res.send('Hello world')
 // })
 
+//cors access
+app.use(cors(
+    {
+        origin: ["https://food-app-mern.vercel.app"],
+        methods: ['POST', 'GET'],
+        credentials: true
+    }
+))
+
 //Providing cross origin access
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
