@@ -7,22 +7,16 @@ const cors = require('cors')
 //importing database connection
 mongoDB();
 
-// app.get('/', (req, res) => {
-//     res.send('Hello world')
-// })
+app.get('/', (req, res) => {
+    res.send('Hello world')
+})
 
 //cors access
-app.use(cors(
-    {
-        origin: ["https://food-app-frontend.vercel.app"],
-        methods: ['POST', 'GET'],
-        credentials: true
-    }
-))
+app.use(cors());
 
 //Providing cross origin access
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.setHeader("Access-Control-Allow-Credentials", "true");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
