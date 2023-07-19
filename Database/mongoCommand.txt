@@ -1,0 +1,6 @@
+mongoimport --uri mongodb+srv://shivam361v:Shivam@mdb@cluster0.3vplxki.mongodb.net/yumfood --collection food_items --jsonArray --file "D:\Projects\FoodApp\Database\foodData.json"
+
+mongoimport --uri mongodb+srv://shivam:FakY4ekYN0j8OYgw@cluster0.60zdq2z.mongodb.net/yumFood --collection food_items --jsonArray --file "D:\Projects\FoodApp\Database\foodCategory.json"
+
+usename  - shivam
+Passward - FakY4ekYN0j8OYgw	
