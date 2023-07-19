@@ -13,7 +13,7 @@ mongoDB();
 //cors access
 app.use(cors(
     {
-        origin: ["https://food-app-mern.vercel.app"],
+        origin: ["https://food-app-frontend.vercel.app"],
         methods: ['POST', 'GET'],
         credentials: true
     }
